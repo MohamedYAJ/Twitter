@@ -1,0 +1,73 @@
+.button {
+  display: flex;
+  justify-content: end;
+  margin: 0.5% 0.5% 0% 0%;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+body.dark {
+  background-color: #010409;
+}
+
+body.dark div #menu, body.dark div #tweet {
+  background-color: #16191c; 
+}
+
+body.dark div #tweet-form {
+  background-color: #211e1e;
+}
+
+body.dark h1 {
+  color: white;
+}
+
+body.dark h6, body.dark h4, body.dark h2, body.dark p {
+  color:white;
+  opacity: 0.9;
+}
+
+body.dark input::placeholder, body.dark textarea::placeholder, body.dark #datetime{
+  opacity: 0.5;
+  color:black;
+}
+
+body.dark #label-images {
+  opacity: 0.75;
+  color: white;
+}
